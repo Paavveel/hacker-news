@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { HttpException } from '../exceptions/HttpException';
 
 const API_BASE_URL = 'https://hacker-news.firebaseio.com/v0/';
 
@@ -11,6 +12,11 @@ type GetPostsResponse = number[];
 export const getPosts = async () => {
   try {
     const { data } = await api.get<GetPostsResponse>(`newstories.json`);
-    return data;
-  } catch (err) {}
+    return data.slice(0, 100);
+  } catch (err) {
+    if (err instanceof Error) {
+      throw new HttpException(404, err.message);
+    }
+    throw new HttpException(404, 'Request failed');
+  }
 };

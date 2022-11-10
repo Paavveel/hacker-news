@@ -1,11 +1,15 @@
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { getPosts } from '../services/api';
 
-export const getPostsController = async (req: Request, res: Response) => {
+export const getPostsController = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
-    const data = await getPosts();
-    res.send(data?.slice(0, 100));
+    const posts = await getPosts();
+    res.send(posts);
   } catch (err) {
-    throw err;
+    next(err);
   }
 };
