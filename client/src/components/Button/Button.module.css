@@ -12,11 +12,11 @@
   width: 1.25rem;
   height: 1.25rem;
 
-  fill: var(--secondary-text-color);
+  fill: var(--white-text-color);
 }
 
 .primary {
-  border: 1px solid rgb(38 93 151 / 100%);
+  border: none;
   border-radius: 8px;
   background-color: var(--primary);
 }
