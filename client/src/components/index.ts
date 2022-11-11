@@ -3,3 +3,4 @@ export * from './Layout/Layout';
 export * from './Main/Main';
 export * from './Title/Title';
 export * from './Typography/Typography';
+export * from './Username/Username';
