@@ -1,5 +1,4 @@
-function App() {
-  return <div className='App'>Hello world</div>;
-}
-
-export default App;
+import { BrowserRouter } from 'react-router-dom';
+export const App = () => {
+  return <BrowserRouter></BrowserRouter>;
+};
