@@ -2,6 +2,7 @@ export * from './Header/Header';
 export * from './Layout/Layout';
 export * from './Main/Main';
 export * from './Score/Score';
+export * from './Spinner/Spinner';
 export * from './Time/Time';
 export * from './Title/Title';
 export * from './Typography/Typography';
