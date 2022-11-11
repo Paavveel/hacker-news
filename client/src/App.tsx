@@ -1,4 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
+import { Layout } from './components';
 export const App = () => {
-  return <BrowserRouter></BrowserRouter>;
+  return (
+    <BrowserRouter>
+      <Layout></Layout>
+    </BrowserRouter>
+  );
 };
