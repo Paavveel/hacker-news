@@ -3,21 +3,31 @@
   align-items: center;
   font-family: inherit;
   justify-content: space-between;
-  padding: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
   cursor: pointer;
   column-gap: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.disabled {
+  background-color: var(--primary-light) !important;
+  cursor: not-allowed;
 }
 
 .button svg {
   width: 1.25rem;
   height: 1.25rem;
 
-  fill: var(--white-text-color);
+  fill: var(--primary);
 }
 
 .primary {
-  border: none;
-  border-radius: 8px;
+  color: var(--primary-text-color);
+  border-color: var(--primary);
   background-color: var(--primary);
 }
 
@@ -26,12 +36,28 @@
 }
 
 .ghost {
-  padding: 0.5rem 0;
-
+  color: var(--primary-text-color);
   border: none;
   background: none;
 }
 
 .ghost:hover {
   opacity: 0.7;
+}
+
+.loading {
+  width: 20px;
+  height: 20px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: var(--primary-text-color);
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: loading-btn 0.8s infinite linear;
+}
+
+@keyframes loading-btn {
+  to {
+    transform: rotate(1turn);
+  }
 }
