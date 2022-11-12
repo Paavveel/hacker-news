@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { Button } from '../../components';
+import { Button, NewsCard } from '../../components';
 import styles from './MainPage.module.css';
 
 export const MainPage = () => {
@@ -10,6 +10,7 @@ export const MainPage = () => {
           <span>Update</span>
         </Button>
       </div>
+      <NewsCard newsId={1} />
     </>
   );
 };
