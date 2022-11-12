@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem 2rem 0;
+}
+
+.comments {
+  padding: 2rem;
+}
+
+.label {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .comments {
+    padding: 1rem;
+  }
+}
