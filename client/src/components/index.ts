@@ -4,6 +4,7 @@ export * from './Header/Header';
 export * from './Layout/Layout';
 export * from './Main/Main';
 export * from './NewsCard/NewsCard';
+export * from './NewsCardList/NewsCardList';
 export * from './Score/Score';
 export * from './Skeleton/Skeleton';
 export * from './Spinner/Spinner';
