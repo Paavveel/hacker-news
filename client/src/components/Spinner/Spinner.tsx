@@ -1,5 +1,12 @@
 import cn from 'classnames';
-import { FC } from 'react';
+import { ButtonHTMLAttributes, DetailedHTMLProps, FC } from 'react';
 import styles from './Spinner.module.css';
 
-export const Spinner: FC = () => <div className={cn(styles.spinner)} />;
+type ISpinnerProps = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>;
+
+export const Spinner: FC<ISpinnerProps> = ({ className, ...props }) => (
+  <div className={cn(styles.spinner, className)} {...props} />
+);
