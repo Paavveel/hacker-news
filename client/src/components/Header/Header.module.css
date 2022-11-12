@@ -3,11 +3,10 @@
   align-items: center;
   justify-content: center;
   min-height: 4em;
-  box-shadow: inset 0 -1px 1px var(--secondary-bg-color);
 }
 
 .logo {
-  color: var(--primary-light);
+  color: var(--white-text-color);
   font-size: 2.3rem;
   font-weight: 900;
 }
