@@ -5,6 +5,7 @@
   background-color: var(--secondary-bg-color);
   padding: 2rem;
   margin: 0 2rem;
+  width: 93%;
   border: 2px solid var(--primary);
   transition: border-color 0.25s;
 }
