@@ -2,7 +2,7 @@ import cn from 'classnames';
 import { FC } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { useHistory } from 'react-router-dom';
-import { Button, Typography } from '../../components';
+import { Button, NewsPost, Typography } from '../../components';
 
 import styles from './NewsPostPage.module.css';
 
@@ -28,6 +28,7 @@ export const NewsPostPage: FC = () => {
           <span>Update</span>
         </Button>
       </div>
+      <NewsPost newsId={1} />
     </>
   );
 };
