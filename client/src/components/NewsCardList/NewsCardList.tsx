@@ -1,5 +1,5 @@
 import { DetailedHTMLProps, FC, HTMLAttributes } from 'react';
-import { NewsCard, Title } from '..';
+import { NewsCard } from '..';
 import styles from './NewsCardList.module.css';
 
 interface INewsCardListProps
@@ -11,10 +11,6 @@ interface INewsCardListProps
 }
 
 export const NewsCardList: FC<INewsCardListProps> = ({ posts }) => {
-  if (!posts) {
-    return <Title>No news found 😔</Title>;
-  }
-
   return (
     <ul className={styles.list}>
       {posts.map((id) => (

@@ -2,6 +2,7 @@ import cn from 'classnames';
 import { DetailedHTMLProps, FC, HTMLAttributes } from 'react';
 import { Link } from 'react-router-dom';
 import { Avatar, Score, Skeleton, Time, Title, Username } from '..';
+import { useGetItemQuery } from '../../services/newsApi';
 import styles from './NewsCard.module.css';
 
 interface INewsCardProps
@@ -9,20 +10,10 @@ interface INewsCardProps
   newsId: number;
 }
 
-const newsStub = {
-  by: 'dhouston',
-  descendants: 71,
-  id: 8863,
-  kids: [8952, 8876],
-  score: 11,
-  time: 1175714200,
-  title: 'Prism. The perfect OAS (Swagger) companion.',
-  type: 'story',
-  url: 'http://stoplight.io/prism/',
-};
-
 export const NewsCard: FC<INewsCardProps> = ({ newsId, className }) => {
-  if (false) {
+  const { data, isLoading } = useGetItemQuery(newsId);
+
+  if (isLoading) {
     return (
       <li className={cn(styles.card, styles.skeleton, className)}>
         <div className={cn(styles.skeleton_header)}>
@@ -37,17 +28,24 @@ export const NewsCard: FC<INewsCardProps> = ({ newsId, className }) => {
       </li>
     );
   }
+
+  if (!data) {
+    return <></>;
+  }
+
+  const { by, time, score, title, id } = data;
+
   return (
     <li className={cn(styles.card, className)}>
-      <Link to={{ pathname: `/news/${newsId}` }} className={cn(styles.link)}>
+      <Link to={{ pathname: `/news/${id}` }} className={cn(styles.link)}>
         <div className={cn(styles.card_header)}>
-          <Avatar name={newsStub.by} />
-          <Username>{newsStub.by}</Username>
-          <Time time={newsStub.time} />
+          <Avatar name={by} />
+          <Username>{by}</Username>
+          <Time time={time} />
         </div>
         <div className={cn(styles.card_body)}>
-          <Score score={newsStub.score} />
-          <Title className={styles.title}>{newsStub.title}</Title>
+          <Score score={score} />
+          <Title className={styles.title}>{title}</Title>
         </div>
       </Link>
     </li>
