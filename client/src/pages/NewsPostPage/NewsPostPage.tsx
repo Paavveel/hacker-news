@@ -52,7 +52,7 @@ export const NewsPostPage: FC = () => {
       </div>
       <NewsPost {...data} />
       {isLoading || isFetching ? (
-        <Spinner />
+        <></>
       ) : (
         <div className={styles.comments}>
           <Typography size='l' weight='bold' color='secondary'>

@@ -1,5 +1,6 @@
 export * from './Avatar/Avatar';
 export * from './Button/Button';
+export * from './Comment/Comment';
 export * from './Header/Header';
 export * from './Layout/Layout';
 export * from './Main/Main';
