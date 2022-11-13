@@ -25,7 +25,7 @@
 1. Клонируем репозиторий:
 
 ```sh
-git clone git@github.com:Paavveel/hacker-news.git
+git clone https://github.com/Paavveel/hacker-news.git
 ```
 
 2. Переходим в папку с проектом:
