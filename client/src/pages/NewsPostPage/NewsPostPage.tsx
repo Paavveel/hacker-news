@@ -29,6 +29,11 @@ export const NewsPostPage: FC = () => {
         </Button>
       </div>
       <NewsPost newsId={1} />
+      <div className={styles.comments}>
+        <Typography size='l' weight='bold' color='secondary'>
+          {10} Comments
+        </Typography>
+      </div>
     </>
   );
 };
