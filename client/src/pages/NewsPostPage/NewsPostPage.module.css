@@ -1,28 +1,28 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-  width: 100%;
+	width: 100%;
 
-  padding: 2rem;
+	padding: 2rem;
 }
 
 .comments {
-  width: 100%;
-  padding: 2rem;
+	width: 100%;
+	padding: 2rem;
 }
 
 .label {
-  color: var(--primary);
+	color: var(--primary);
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
+	.container {
+		padding: 1rem;
+	}
 
-  .comments {
-    padding: 1rem;
-  }
+	.comments {
+		padding: 1rem;
+	}
 }

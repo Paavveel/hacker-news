@@ -1,49 +1,63 @@
 :root {
-  --white-text-color: #ffffff;
-  --primary-text-color: rgba(255, 255, 255, 0.87);
-  --secondary-text-color: #676e95;
-  --primary-bg-color: #242424;
-  --secondary-bg-color: #1a1a1a;
-  --primary: #646cff;
-  --primary-light: #bcc0ff;
-  --primary-hover: #535bf2;
-  --score-positive: #42d392;
-  --score-negative: #fd1d7c;
-  --divider-dark: rgba(84, 84, 84, 0.48);
-  --divider-light: rgba(211, 209, 209, 0.48);
-  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+	--white-text-color: #FFF;
+	--primary-text-color: rgb(255 255 255 / 87%);
+	--secondary-text-color: #676E95;
+	--primary-bg-color: #242424;
+	--secondary-bg-color: #1A1A1A;
+	--primary: #646CFF;
+	--primary-light: #BCC0FF;
+	--primary-hover: #535BF2;
+	--score-positive: #42D392;
+	--score-negative: #FD1D7C;
+	--divider-dark: rgb(84 84 84 / 48%);
+	--divider-light: rgb(211 209 209 / 48%);
+	--font-family-base:
+		-apple-system,
+		blinkmacsystemfont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		sans-serif;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 a {
-  font-weight: 500;
-  color: var(--primary);
-  text-decoration: none;
-  transition: color 0.25s;
+	transition: color 0.25s;
+	text-decoration: none;
+
+	color: var(--primary);
+
+	font-weight: 500;
 }
+
 a:hover {
-  color: var(--primary-hover);
+	color: var(--primary-hover);
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  line-height: 24px;
-  font-family: var(--font-family-base);
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+
+	color: var(--primary-text-color);
+	background-color: var(--primary-bg-color);
+
+	font-family: var(--font-family-base);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: 100%;
 }

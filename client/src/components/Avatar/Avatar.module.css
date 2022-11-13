@@ -1,22 +1,26 @@
 .avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  color: var(--white-text-color);
-  border-radius: 50%;
-  background-color: #2a09f2;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 2rem;
+	height: 2rem;
+
+	color: var(--white-text-color);
+	border-radius: 50%;
+	background-color: #2A09F2;
+
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .avatar {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
-  }
+	.avatar {
+		width: 1.5rem;
+		height: 1.5rem;
+
+		font-size: 0.75rem;
+		line-height: 0.75rem;
+	}
 }

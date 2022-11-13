@@ -1,122 +1,123 @@
 .comment {
-  width: auto;
+	width: auto;
 }
 
 .body {
-  margin: 20px 0 0;
+	margin: 20px 0 0;
 }
 
 .comment_head {
-  display: grid;
-  grid-template-columns: min-content max-content auto;
-  column-gap: 1rem;
+	display: grid;
+	grid-template-columns: min-content max-content auto;
+	column-gap: 1rem;
 
-  align-items: center;
+	align-items: center;
 
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .toggle_children {
-  color: var(--primary);
-  margin: 1rem 0 1rem;
-  margin-left: 30px;
+	margin: 1rem 0;
+	margin-left: 30px;
+
+	color: var(--primary);
 }
 
 .toggled {
-  margin: 0;
+	margin: 0;
 }
 
 .comment_children {
-  position: relative;
+	position: relative;
 
-  padding-left: 25px;
+	padding-left: 25px;
 }
 
 .collapsing_area {
-  position: absolute;
-  top: 0;
-  left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 
-  display: block;
+	display: block;
 
-  width: 20px;
-  height: 100%;
+	width: 20px;
+	height: 100%;
 
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .line {
-  width: 1px;
-  height: 100%;
-  margin: 0 auto;
+	width: 1px;
+	height: 100%;
+	margin: 0 auto;
 
-  border-left: 2px solid rgb(255 255 255 / 10%);
+	border-left: 2px solid rgb(255 255 255 / 10%);
 }
 
 .collapsing_area:hover .line {
-  border-left: 3px solid rgb(255 255 255 / 50%);
+	border-left: 3px solid rgb(255 255 255 / 50%);
 }
 
 .collapsing_area:hover .icon {
-  color: rgb(255 255 255 / 50%);
+	color: rgb(255 255 255 / 50%);
 }
 
 .skeleton {
-  row-gap: 1.5rem;
+	row-gap: 1.5rem;
 }
 
 .skeleton_header {
-  display: grid;
-  grid-template-columns: 30% auto;
+	display: grid;
+	grid-template-columns: 30% auto;
 
-  width: 100%;
-  height: 1rem;
+	width: 100%;
+	height: 1rem;
 }
 
 .skeleton_body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1rem 1rem 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1rem 1rem 1rem;
 
-  align-items: center;
-  column-gap: 2rem;
-  row-gap: 1rem;
+	align-items: center;
+	column-gap: 2rem;
+	row-gap: 1rem;
 }
 
 .skeleton_row_a {
-  grid-column: 1 / -1;
+	grid-column: 1 / -1;
 }
 
 .skeleton_row_b {
-  grid-column: 1 / -2;
+	grid-column: 1 / -2;
 }
 
 .deleted {
-  opacity: 0.4;
+	opacity: 0.4;
 }
 
 @media screen and (max-width: 768px) {
-  .body {
-    margin: 10px 0;
-  }
+	.body {
+		margin: 10px 0;
+	}
 
-  .comment_head {
-    margin-bottom: 0.5rem;
-    column-gap: 0.5rem;
-  }
+	.comment_head {
+		margin-bottom: 0.5rem;
+		column-gap: 0.5rem;
+	}
 
-  .skeleton {
-    row-gap: 1rem;
-  }
+	.skeleton {
+		row-gap: 1rem;
+	}
 
-  .skeleton_header {
-    grid-template-rows: 0.75rem;
-  }
+	.skeleton_header {
+		grid-template-rows: 0.75rem;
+	}
 
-  .skeleton_body {
-    grid-template-columns: 3rem auto 15%;
-    grid-template-rows: 1rem 1rem;
-    column-gap: 1.5rem;
-    row-gap: 0.75rem;
-  }
+	.skeleton_body {
+		grid-template-columns: 3rem auto 15%;
+		grid-template-rows: 1rem 1rem;
+		column-gap: 1.5rem;
+		row-gap: 0.75rem;
+	}
 }

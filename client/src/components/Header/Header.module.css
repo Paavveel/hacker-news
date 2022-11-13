@@ -1,16 +1,18 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 4em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 4em;
 }
 
 .logo {
-  color: var(--white-text-color);
-  font-size: 2.3rem;
-  font-weight: 900;
+	color: var(--white-text-color);
+
+	font-size: 2.3rem;
+	font-weight: 900;
 }
 
 .logo:hover {
-  color: var(--primary);
+	color: var(--primary);
 }
