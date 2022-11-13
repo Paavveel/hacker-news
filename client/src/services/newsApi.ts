@@ -3,7 +3,7 @@ import { IItem, TPostsList } from '../types';
 
 const BASE_URL = 'http://localhost:3500';
 
-const newsApi = createApi({
+export const newsApi = createApi({
   reducerPath: 'newsApi',
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   endpoints: (build) => ({

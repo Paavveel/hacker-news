@@ -1,6 +1,6 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/dist/query';
-import newsApi from '../services/newsApi';
+import { newsApi } from '../services/newsApi';
 import newsReducer from './slices/newsSlice';
 
 export const store = configureStore({
