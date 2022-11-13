@@ -4,6 +4,8 @@
   margin: 0;
   padding: 2rem;
 
+  width: 100%;
+
   list-style: none;
   gap: 1rem;
 }
