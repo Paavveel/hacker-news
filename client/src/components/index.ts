@@ -7,6 +7,7 @@ export * from './NewsCard/NewsCard';
 export * from './NewsCardList/NewsCardList';
 export * from './NewsPost/NewsPost';
 export * from './Score/Score';
+export * from './ScrollUp/ScrollUp';
 export * from './Skeleton/Skeleton';
 export * from './Spinner/Spinner';
 export * from './Time/Time';
