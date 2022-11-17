@@ -48,7 +48,7 @@ cd server
 yarn install
 ```
 
-5. Запускаем проект:
+5. Запускаем сервер:
 
 ```sh
 yarn start
