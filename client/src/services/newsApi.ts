@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 import { IItem, TPostsList } from '../types';
 
-const BASE_URL = 'http://localhost:3500';
+// const BASE_URL = 'http://localhost:3500';
+const BASE_URL = 'https://hacker-news-api-paavveel.onrender.com';
 
 export const newsApi = createApi({
   reducerPath: 'newsApi',
