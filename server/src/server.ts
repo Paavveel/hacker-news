@@ -5,7 +5,7 @@ import { corsOptions } from './config/corsOptions';
 import { errorHandler } from './middleware/errorHandler';
 import { router } from './routes';
 
-const PORT = 3500;
+const PORT = process.env.PORT || 3500;
 
 const app = express();
 
