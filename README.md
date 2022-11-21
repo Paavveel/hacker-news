@@ -1,6 +1,7 @@
 # Тестовое задание для Avito
 
 Полное описание по [ссылке](https://github.com/avito-tech/internship_frontend_2022)
+
 Демо по [ссылке](https://hacker-news-paavveel.onrender.com)
 
 ## Технологии
