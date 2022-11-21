@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { DetailedHTMLProps, FC, HTMLAttributes, useMemo } from 'react';
-import styles from './score.module.css';
+import styles from './Score.module.css';
 
 interface IScoreProps
   extends DetailedHTMLProps<
