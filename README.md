@@ -21,7 +21,7 @@
   <a href="#install">Установка</a>
 </h3>
 
-h4 align=center>Тестовое задание для Avito. Сервис с новостями.</h4>
+<h4 align=center>Тестовое задание для Avito. Сервис с новостями.</h4>
 
 <h3 align="center">
   <a href="https://hacker-news-paavveel.onrender.com" title="Link">Demo</a> 
@@ -30,6 +30,7 @@ h4 align=center>Тестовое задание для Avito. Сервис с н
 </h3>
 
 <h1 id="about">О проекте</h1>
+
 <table>
   <tbody>
     <tr>
@@ -43,6 +44,7 @@ h4 align=center>Тестовое задание для Avito. Сервис с н
 </table>
 
 <h1 id="techs">Технологии</h1>
+
 <table>
   <thead>
     <tr>
@@ -109,10 +111,7 @@ h4 align=center>Тестовое задание для Avito. Сервис с н
 
 <h3>Frontend</h3>
 
-<h4>Главная страница</h4>
-
 <ul>
-  
   <li>Показывает последние 100 новостей в виде списка, отсортированного по дате, самые свежие сверху (реализована бесконечная прокрутка - загружается по 10 новостей)</li>
   <li>Список новостей обновляется каждые 60 секунд без участия пользователя, так же есть кнопка для принудительного обновления списка новостей</li>
   <li>По клику на новость происходит переход на страницу новости</li>
@@ -140,9 +139,9 @@ cd <имя рабочей директории>
   </li>
   <li>
     <p>Клонируем репо:</p>
-```sh
+<pre>
 git clone https://github.com/Paavveel/hacker-news.git
-```
+</pre>
   </li>
     <li>
       В рабочей директории должна появиться папка проекта <code>hacker-news</code>
@@ -151,46 +150,46 @@ git clone https://github.com/Paavveel/hacker-news.git
 </li>
 <li>
   <p>Переходим в папку с проектом:</p>
-```sh
+<pre>
 cd hacker-news
-```
+</pre>
 </li>
 <h3>Backend</h3>
 <li>
   <p>Переходим в директорию с бэкендом:</p>
-```sh
+<pre>
 cd server
-```
+</pre>
 </li>
 <li>
   <p>Устанавливаем зависимости:</p>
-```sh
+<pre>
 yarn install
-```
+</pre>
 </li>
 <li>
   <p>Запускаем сервер:</p>
-```sh
+<pre>
 yarn start
-```
+</pre>
 </li>
 <h3>Frontend</h3>
 <li>
   <p>Переходим в директорию с фронтендом:</p>
-```sh
+<pre>
 cd client
-```
+</pre>
 </li>
 <li>
   <p>Устанавливаем зависимости:</p>
-```sh
+<pre>
 yarn install
-```
+</pre>
 </li>
 <li>
   <p>Запускаем проект:</p>
-```sh
+<pre>
 yarn start
-```
+</pre>
 </li>
 </ol>
