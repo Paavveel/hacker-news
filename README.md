@@ -36,7 +36,7 @@
     <tr>
       <td>
         <p align="center"><b>Выполнен <br>как тестовое задание для Avito internship frontend 2022</b><p>
-        <p align="center">Новосной сервис на основе Hacker News API. Написана как Frontend, так и Backend часть (BFF для инкапсуляции запросов к основному API).</p>
+        <p align="center">Новостной сервис на основе Hacker News API. Написана как Frontend, так и Backend часть (BFF для инкапсуляции запросов к основному API).</p>
       </td>
       <td width="70%"><img src="https://user-images.githubusercontent.com/65166970/204088725-8f67c689-26d2-49cd-ac1f-4d48c5437e54.gif"/></td>
     </tr>
